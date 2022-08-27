@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>sign-up form</title>
+</head>
+<body>
+  <div class="left">
+    <div class="logo">
+      <img src="images/odin-lined.png" alt="Odin with a helmet">
+      ODIN
+    </div>
+    <footer> Photo by Elisa Stone on Unsplash</footer>
+  </div>
+  <div class="right">
+    <header>
+      <h3>This is not a real online service! You know you 
+        need something like this in your life to help you 
+        realize your deepest dreams. Sign up now 
+        to get started.
+      </h3>
+      <p>You know you want to.</p>
+    </header>
+    <form id="account-create-form">
+      <h3>Let's do this!</h3>
+      <ul>
+        <li>
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" id="first-name" name="firsr-name">
+        </li>
+        <li>
+          <label for="last-name">LAST NAME</label>
+          <input type="text" id="last-name" name="last-name">
+        </li>
+        <li>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email">
+        </li>
+        <li>
+          <label for="phone-number">PHONE NUMBER</label>
+          <input type="text" id="phone-number" 
+          name="phone-number" inputmode="numeric"
+          pattern="\d{10}" title="10 digit number">
+        </li>
+        <li>
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password">
+        </li>
+        <li>
+          <label for="password-confirm">CONFIRM PASSWORD</label>
+          <input type="password" id="password-confirm"
+          name="password-confirm">
+        </li>
+      </ul>
+    </form>
+    <button type="submit" form="account-create-form">
+      Create Account
+    </button>
+    <p class="login">
+      Already have an account? <a>Log in</a>
+    </p>
+  </div>
+</body>
+</html>
