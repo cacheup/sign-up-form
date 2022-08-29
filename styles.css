@@ -13,7 +13,7 @@ body {
   background-color: #F9F8FB;
   display: flex;
   font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.4;
+  line-height: 1.2;
   font-size: 16px;
 }
 
@@ -22,9 +22,9 @@ html {
 }
 
 .left {
- width: 65%;
+ width: 70%;
  background-image: url(images/elisa-stone-eagle-unsplash.jpg);
- background-size: auto 750px;
+ background-size: cover;
  background-repeat: no-repeat;
  background-position: center;
  color: white;
@@ -57,4 +57,19 @@ footer {
 
 a {
   color: white;
+}
+
+.right {
+  padding-left: 30px;
+}
+
+header {
+  padding-right: 120px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+header > p {
+  font-size: 18px;
+  font-weight: bold;
 }
