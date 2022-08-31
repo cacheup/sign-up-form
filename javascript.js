@@ -11,3 +11,29 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+password.addEventListener('input', () => {
+  if(password.value != passwordConfirm.value) {
+    password.classList.add('error');
+    passwordConfirm.classList.add('error');
+    errorMsg.textContent = "* Passwords do not match";
+  }
+  else {
+    password.classList.remove('error');
+    passwordConfirm.classList.remove('error');
+    errorMsg.textContent = " ";
+  }
+});
+
+passwordConfirm.addEventListener('input', () => {
+  if(passwordConfirm.value != password.value) {
+    passwordConfirm.classList.add('error');
+    password.classList.add('error');
+    errorMsg.textContent = "* Passwords do not match";
+  }
+  else {
+    passwordConfirm.classList.remove('error');
+    password.classList.remove('error');
+    errorMsg.textContent = " ";
+  }
+});
