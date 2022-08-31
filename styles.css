@@ -93,7 +93,7 @@ ul {
   flex-flow: row wrap;
   column-gap: 60px;
   row-gap: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 button, input {
@@ -153,4 +153,14 @@ button {
 .login a {
   color: #6293BC;
   font-weight: bold;
+}
+
+.error-msg {
+  color: red;
+  height: 20px;
+  font-size: 11px;
+}
+
+.error {
+  border: 1px red solid;
 }
