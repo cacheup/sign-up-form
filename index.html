@@ -48,13 +48,19 @@
         </li>
         <li>
           <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password">
+          <input type="password" id="password" name="password" 
+          pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
+          title="Must be at least 8 characters, contain an upper case letter,
+          a lower case letter, and a number">
           <div class="error-msg" aria-live="polite"></div>
         </li>
         <li>
           <label for="password-confirm">CONFIRM PASSWORD</label>
           <input type="password" id="password-confirm"
-          name="password-confirm">
+          name="password-confirm"
+          pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
+          title="Must be at least 8 characters, contain an upper case letter,
+          a lower case letter, and a number">
         </li>
       </ul>
     </form>
